@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* Map*/
+.bienvenida {
+  background-color: #252424;
+  color: white;
+}
+
+footer {
+  background-color: #252424;
+  color: white;
+}
+
+/*Extend*/
+.platos, .platos .reseñas {
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 20px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+/*Mixin*/
+.whatsapp {
+  background-color: #239923;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 1rem;
+  color: white;
+}
+
+.instagram {
+  background-color: #eb6cba;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 1rem;
+  color: white;
+}
+
+.facebook {
+  background-color: #4b69f1;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 1rem;
+  color: white;
+}
+/*# sourceMappingURL=estilo.css.map */

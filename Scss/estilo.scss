@@ -1,0 +1,55 @@
+$redesw: rgb(35, 153, 35);
+$redesi: rgb(235, 108, 186);
+$redesf: rgb(75, 105, 241);
+$text: white;
+/* Map*/
+
+$fondo:(
+    principal: rgb(37, 36, 36),
+    letras: white,
+);
+
+$princial: map-get($fondo, principal);
+$letras: map-get($fondo, letras);
+
+.bienvenida{
+    background-color: $princial;
+    color: $letras;
+}
+footer{
+    background-color: $princial;
+    color: $letras;
+}
+
+/*Extend*/
+.platos{
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    .reseñas{
+        @extend .platos;  
+    }
+
+}
+
+/*Mixin*/
+@mixin redes($redes){
+    background-color: $redes;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+    color: $text;
+}
+
+
+.whatsapp{
+    @include redes($redesw)
+}
+.instagram{
+    @include redes($redesi)
+}
+.facebook{
+    @include redes($redesf)
+}
